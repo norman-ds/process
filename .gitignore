@@ -1,3 +1,18 @@
+# Hugo file
+blogdown
+public
+_book
+
+# a copy of theme
+dummy
+
+# Workspace
+.rstudio
+
+# File handler
+.DS_Store
+Thumbs.db
+
 # History files
 .Rhistory
 .Rapp.history
