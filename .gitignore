@@ -8,6 +8,8 @@ dummy
 
 # Workspace
 .rstudio
+.cache
+.bash_history
 
 # File handler
 .DS_Store

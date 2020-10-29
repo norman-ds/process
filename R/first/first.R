@@ -6,7 +6,9 @@ libs <- c("bupaR",
           "processmapR",
           "processmonitR",
           "xesreadR",
-          "petrinetR")
+          "petrinetR",
+          "DiagrammeRsvg",
+          "rsvg")
 ip <- installed.packages(fields = c("Package", "Version"))
 ip <- as.data.frame(ip)
 ip <- ip[ip[,c("Package")] %in% libs,]
@@ -19,11 +21,6 @@ install.packages("processmapR")
 install.packages("processmonitR")
 install.packages("xesreadR")
 install.packages("petrinetR")
+install.packages("DiagrammeRsvg")
+install.packages("rsvg")
 
-library(bupaR)
-
-eventdataR::sepsis %>%
-  trace_explorer()
-
-eventdataR::patients %>%
-  resource_map()

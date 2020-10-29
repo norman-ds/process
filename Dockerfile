@@ -1,4 +1,4 @@
-FROM rocker/rstudio:4.0.3
+FROM rocker/rstudio:3.6.2
 
 # Install R packages
 ## bupaR
@@ -14,5 +14,9 @@ RUN R -e "install.packages('processmonitR', repos='https://cloud.r-project.org/'
 ## xesreadR
 RUN R -e "install.packages('xesreadR', repos='https://cloud.r-project.org/')"
 ## petrinetR
+RUN R -e "install.packages('petrinetR', repos='https://cloud.r-project.org/')"
+## DiagrammeRsvg
+RUN R -e "install.packages('xesreadR', repos='https://cloud.r-project.org/')"
+## rsvg
 RUN R -e "install.packages('petrinetR', repos='https://cloud.r-project.org/')"
 
